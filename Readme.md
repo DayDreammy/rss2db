@@ -47,21 +47,6 @@ sudo yum install wkhtmltopdf
 brew install wkhtmltopdf
 ```
 
-## 配置
-
-在 `config.py` 中可以修改以下配置：
-
-```python
-# RSS 服务器配置
-RSS_BASE_URL = "http://47.99.121.125:9021"  # WeWe RSS 服务器地址
-
-# 数据库配置
-DB_PATH = "/home/yy/project/Gewechat/vxbot/data/message_monitor.db"
-
-# PDF 配置
-PDF_DIR = "/home/yy/project/Gewechat/vxbot/data/articles/pdfs"
-```
-
 ## 使用方法
 
 ### 1. 获取并存储 RSS 文章
