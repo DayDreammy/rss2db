@@ -1,10 +1,12 @@
+import os
 import requests
 import urllib.parse
 import json
 import xml.etree.ElementTree as ET
 
 # 基础URL，替换为你的实际服务地址
-BASE_URL = "http://47.99.121.125:9021"  # wewerss
+BASE_URL = os.getenv("WEWERSS_URL", "http://localhost:9021")  # wewerss
+print(BASE_URL)
 
 
 def get_feed(feed_id=None, format="json", title_include=None, title_exclude=None, limit=None, update=False):
